@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./number-guessing-game.css" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Title of Game -->
+    <header>
+        <div>
+            <h1 class="game-title">Number Guessing Game</h1><!--
+            <h4>The computer will choose a number between 1 and 100</h4>
+            <h4>You are given 10 guesses to start.  For each guess a point is removed</h4>
+            <h4>For each right guess, you earn 5 guesses.</h4>
+            <h4>When your total reaches 0, you lose.  Good luck!</h4>
+        </div> -->
+    </header>
+    
+    <!-- Game Body -->
+    <main>
+        <div class="game-text wrapper">
+            <p>You currently have : </p>
+            <p id="guess-style"><span id="guessesLeft"></span> guesses left!</p>
+            <p>I am thinking of a number between</p>
+            <p><span id="minNum"></span> and <span id="maxNum"></span></p>
+            <p>Your round score:</p>
+            <p><span id="roundScore"></span></p>
+            
+        </div>
+        <div class="guess-section">
+            <p id="userInput-style">What is your guess?</p>
+            <input type="text" class="description" placeholder="Enter your guess here!"><br>
+            <button id="btn">submit</button>
+            <p id="guessResult"></p>
+            <p id="guessResult2"></p>
+        </div>
+        <p id="random"></p>
+
+    </main>
+    
+    <!-- Go Back and other info -->
+    <footer></footer>
+    
+    <!-- JavaScript -->
+    <script src="number-guessing-game.js"></script>
+</body>
+</html>
