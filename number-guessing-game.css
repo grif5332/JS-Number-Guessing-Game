@@ -7,7 +7,7 @@ body {
 }
 
 .game-title {
-    padding: 30px 0;
+    padding: 30px 0 15px 0;
     margin: 0;
     background-color: tomato;
     color: beige;
@@ -16,15 +16,18 @@ body {
     font-weight: 200;
     border-bottom: 6px solid burlywood;
 }
-
 .wrapper {
     width: 80%;
     margin: auto;
     text-align: center;
 }
+.form-style {
+    width: 30%;
+    margin: auto;
+}
 
 .game-text {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 #guess-style {
@@ -46,9 +49,9 @@ body {
 
 .guess-section {
     background-color: forestgreen;
-    width: 100%;
     text-align: center;
     padding: 10px; 
+    height: 220px;
 }
 
 #userInput-style {
@@ -76,4 +79,5 @@ button {
 #guessResult2 {
     color: beige;
     font-size: 1.5em;
+    margin: 5px 0;
 }

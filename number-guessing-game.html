@@ -20,7 +20,7 @@
     </header>
     
     <!-- Game Body -->
-    <main>
+    <main class="container">
         <div class="game-text wrapper">
             <p>You currently have : </p>
             <p id="guess-style"><span id="guessesLeft"></span> guesses left!</p>
@@ -32,13 +32,13 @@
         </div>
         <div class="guess-section">
             <p id="userInput-style">What is your guess?</p>
-            <input type="text" class="description" placeholder="Enter your guess here!"><br>
-            <button id="btn">submit</button>
+            <form class="form-style">
+                <input type="text" class="description" placeholder="Enter your guess here!"><br>
+                <button type="submit" id="btn">submit</button>
+            </form>
             <p id="guessResult"></p>
             <p id="guessResult2"></p>
         </div>
-        <p id="random"></p>
-
     </main>
     
     <!-- Go Back and other info -->

@@ -12,10 +12,11 @@ document.getElementById('minNum').innerText = min;
 document.getElementById('maxNum').innerText = max;
 document.getElementById('roundScore').innerText = roundScore;
 
-button.addEventListener('click', () => {
+button.addEventListener('click', (e) => {
+    e.preventDefault();
     inputNum = input.value;
     if (inputNum == "" || inputNum <= 0 || inputNum > max) {
-        document.getElementById('guessResult').textContent = 'Please enter an appropriate Number!'
+        document.getElementById('guessResult').textContent = 'Please enter an appropriate number!'
         document.getElementById('guessResult2').textContent = "";
     } else if (inputNum == randomNum) {
         document.getElementById('guessResult').textContent = `Congratulations!  You guessed right!  The number was ${randomNum}`;
